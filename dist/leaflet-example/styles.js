@@ -58,7 +58,7 @@ ___CSS_LOADER_EXPORT___.push([module.i, "/* You can add global styles to this fi
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Administrator\leaflet-example\src\styles.scss */"+EN/");
+module.exports = __webpack_require__(/*! /home/jacielpc/Documentos/leaflet-example/src/styles.scss */"+EN/");
 
 
 /***/ }),
