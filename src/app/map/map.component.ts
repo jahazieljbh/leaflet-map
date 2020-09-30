@@ -31,9 +31,9 @@ export class MapComponent implements AfterViewInit {
       style: (feature) => ({
         weight: 3,
         opacity: 0.5,
-        color: '#008f68',
+        color: '#008f39',
         fillOpacity: 0.8,
-        fillColor: '#6DB65B'
+        fillColor: '#008f39'
       }),
       onEachFeature: (feature, layer) => (
   layer.on({
@@ -49,29 +49,29 @@ export class MapComponent implements AfterViewInit {
   private highlightFeature(e)  {
     const layer = e.target;
     layer.setStyle({
-      weight: 10,
+      weight: 1,
       opacity: 1.0,
-      color: '#DFA612',
+      color: '#6DB65B',
       fillOpacity: 1.0,
-      fillColor: '#FAE042',
+      fillColor: '#9AE86A',
     });
   }
 
   private resetFeature(e)  {
     const layer = e.target;
     layer.setStyle({
-      weight: 3,
+      weight: 1.3,
       opacity: 0.5,
-      color: '#008f68',
+      color: '#008f39',
       fillOpacity: 0.8,
-      fillColor: '#6DB65B'
+      fillColor: '#008f39'
     });
   }
 
   private initMap(): void {
     this.map = L.map('map', {
-      center: [39.8282, -98.5795],
-      zoom: 3
+      center: [30.5893576, -95.9129152],
+      zoom: 4
     });
 
     const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
